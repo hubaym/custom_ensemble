@@ -198,7 +198,7 @@ class CustomEnsemble(object):
 
     
 if __name__=='__main__':
-    df = pd.read_csv("dr.csv", header=None, names=["c" + str(each) for each in range(1, 21)])
+    df = pd.read_csv("example_df.csv", header=None, names=["c" + str(each) for each in range(1, 21)])
     train_cols = ["c" + str(each) for each in range(1, 20)]
     test_col = "c20"
     df.head()
